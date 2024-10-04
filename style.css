@@ -1,6 +1,232 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+body{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding:0;
+}
+.cards-grid{
+    display: grid;
+    grid-template-columns:  28vw 28vw 28vw;
+    gap:30px;
+    padding: 30px 10px;
+    margin: 0 auto;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+}
+
+.card{
+    border-top-right-radius:40px;
+    border-top-left-radius:40px;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+}
+
+.card h3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    margin-top: 0;
+    height: 75px;
+    margin-bottom: 0;
+    padding-left:14px;
+}
+
+.card p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    padding-left: 14px;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+.card-heading , .review-heading{
+    font-family: 'Roboto Slab';
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 101.38%;
+    padding-left: 10vw;
+}
+
+.section-review{
+    background-color: #EFEFEF;
+    padding: 5vw 0 9vw 10vw ;
+}
+
+.review-heading{
+    padding-left: 0;
+}
+
+.review{
+    background-color: white;
+    border-radius:20px ;
+    width: 48vw;
+    padding: 3vw 3vw 4vw 3vw;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+}
+
+.review p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.review-flex{
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    align-items: center;
+}
+    .review-flex-2{
+        padding-bottom: 10px;
+    }
+
+
+@media screen  and (min-width:320px) and (max-width:600px){
+    .card h3{
+        font-size: 14px;
+        line-height: 110%;
+        height: 35px;
+        margin-bottom:0;
+    }
+    
+    .card p{
+        font-size: 13px;
+        line-height: 98%;
+        margin-top: 5px;
+    }
+    .cards-grid{
+        grid-template-columns:  55vw;
+        width: 96.5vw;
+    }
+    .card-heading{
+        font-size: 28px;
+        padding-left: 14vw;
+    }
+
+    .review-heading{
+        font-size: 34px;
+        padding-left: 5vw;
+    }
+
+    .review{
+        width: 70vw;
+        margin: 0 auto;
+    }
+    .review p{
+        font-size: 10px;
+    }
+    .username{
+        font-size: 10px;
+    }
+    .review-pht{
+        width: 80px;
+        height: 88px;
+    }
+    .fb-review{
+        width: 16px;
+        height: 19px;
+    }
+    .section-review{
+        padding-right: 5vw;
+    }
+}
+
+@media screen and  (min-width:600px) and (max-width:991px){
+    .cards-grid{
+        grid-template-columns:  46vw;
+        width: 96.5vw;
+    }
+    .card h3{
+        font-size: 22px;
+        height: 60px;
+    }
+    
+    .card p{
+        font-size: 18px;
+    }
+
+    .card-heading{
+        font-size: 38px;
+        padding-left: 14vw;
+    }
+    .review-heading{
+        font-size: 38px;
+    }
+
+    .review{
+        width: 80vw;
+        margin: 0 auto;
+    }
+    .review p{
+        font-size: 16px;
+    }
+    .username{
+        font-size: 14px;
+    }
+    .review-pht{
+        width: 90px;
+        height: 98px;
+    }
+    .fb-review{
+        width: 16px;
+        height: 17px;
+    }
+    .section-review{
+        padding-right: 5vw;
+    }
+}
+
+
+
+@media screen  and (min-width:992px) and (max-width:1279px){
+    .cards-grid{
+        grid-template-columns:  26vw 26vw 26vw;
+    }
+    .card h3{
+        font-size: 20px;
+        height: 55px;
+    }
+    
+    .card p{
+        font-size: 16px;
+    }
+
+    .card-heading , .review-heading{
+        font-size: 42px;
+    }
+
+    .review p{
+        font-size: 18px;
+    }
+
+    .username{
+        font-size: 20px;
+    }
+    .review-pht{
+        width: 130px;
+        height: 115px;
+    }
+    .fb-review{
+        width: 18.5px;
+        height: 17px;
+    }
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 div.main{
     padding-bottom: 24vh;
 }
@@ -71,7 +297,7 @@ margin-left: 10vw;
     margin-left: 10vw;
     margin-bottom: 15vw;
  }
- @media screen and (min-width:320px) and (max-width:599px){
+ @media screen and (min-width:320px) and (max-width:600px){
     .all{
         width: 65vw;
         display: flex;
@@ -111,7 +337,7 @@ margin-left: 10vw;
 
 
 
- @media screen and (min-width:600px) and (max-width:991px){
+ @media screen and (min-width:601px) and (max-width:991px){
     .all{
        
         display: flex;
